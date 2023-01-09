@@ -1,0 +1,84 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/src/img/bg-main.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10%;
+  height: 100vh;
+  margin: 0 auto;
+  transition: all 0.5s ease-in;
+}
+
+.main-text h1 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.main-text p {
+  color: rgb(197, 190, 190);
+  max-width: 400px;
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.main-text {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bottom-link {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+}
+
+.bottom-link a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.5s ease;
+}
+
+.bottom-link a span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.bottom-link a i {
+  color: #ffac12;
+  font-size: 20px;
+}
+
+.bottom-container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 10%;
+  margin: 0 auto;
+}
+
+.bottom-link a:hover {
+  color: #ffac12;
+  cursor: pointer;
+}

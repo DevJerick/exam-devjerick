@@ -1,38 +1,213 @@
-.App {
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  background: #ffac12;
   text-align: center;
+  border-radius: 3px;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scroll-top i {
+  font-size: 30px;
+  font-weight: 100px;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 1010px) {
+  /* Navbar */
+  nav .nav-container {
+    padding: 18px 6%;
+  }
+
+  /* Main */
+
+  .main .main-container {
+    padding: 0 6%;
+  }
+  .main .bottom-container {
+    padding: 0 6%;
+  }
+
+  /* About */
+  .about .about-container {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .about .about-container .about-img {
+    transform: translateY(0px);
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .about .about-container .about-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about2 .about-container2 {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .about2 .about-container2 .about2-img {
+    transform: translateY(0px);
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .about2 .about-container2 .about2-text {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .about2 .about-container2 .about2-text-container {
+    width: 100%;
+  }
+
+  .dark .dark-container .dark-text {
+    width: 100%;
+  }
+
+  .dark .dark-container .dark-text p {
+    width: 80%;
+  }
+
+  footer .footer-container {
+    width: 100%;
+  }
+
+  footer .footer-container .footer-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer .footer-container .footer-link {
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+
+  footer .footer-container .footer-link ul {
+    text-align: left;
+  }
+
+  footer .footer-container .footer-link ul a {
+    font-size: 12px;
+  }
+
+  footer .footer-container .footer-logo {
+    width: 100%;
+  }
+
+  footer .footer-container .footer-text {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  footer .footer-container .footer-text h1 {
+    font-size: 25px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 850px) {
+  nav .nav-container ul {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    background: #333;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+    gap: 50px;
+    width: 350px;
+    height: 100vh;
+    transition: all 0.5s ease;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-container ul.open {
+    right: 0;
+  }
+
+  nav .nav-container ul li {
+    margin: 0 auto;
+  }
+
+  nav .nav-container button {
+    display: block;
+  }
+
+  nav .nav-container {
+    padding: 14px 6%;
+  }
+
+  .main .main-text h1 {
+    font-size: 45px;
+  }
+
+  .main .main-text p {
+    font-size: 14px;
+  }
+
+  .main .bottom-container .bottom-link a span {
+    font-size: 14px;
+  }
+
+  .bottom-link a i {
+    font-size: 16px;
+  }
+
+  .about .about-container .about-text h1 {
+    font-size: 28px;
+  }
+
+  .about .about-container .about-text p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .about2 .about-container2 .about2-text h1 {
+    font-size: 28px;
+  }
+
+  .about2 .about-container2 .about2-text p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .list .list-container .list-title {
+    font-size: 24px;
+  }
+
+  .dark .dark-container .dark-title {
+    font-size: 30px;
+  }
+
+  .dark .dark-container .dark-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .list .drop-down .list-item-container .item span {
+    font-size: 10px;
+    font-weight: 600;
   }
 }

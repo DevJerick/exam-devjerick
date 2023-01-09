@@ -1,0 +1,112 @@
+nav {
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+
+nav.active {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.nav-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 18px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-in;
+}
+
+.nav-container .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 10px 10px 0;
+}
+
+.nav-container .logo span {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav-container .logo i {
+  color: #ffac12;
+  font-size: 35px;
+  margin-right: 4px;
+}
+
+.nav-container ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-container ul li {
+  margin-left: 30px;
+}
+
+.nav-container ul a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.nav-container ul a:hover {
+  color: #ffac12;
+}
+
+.nav-container button {
+  background: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-container button i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.nav-container ul li .btn {
+  background: #ffac12;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 14px;
+  border-radius: 0 15px 0 0;
+  border: none;
+  box-shadow: rgba(0, 5px, 10px, 0.6);
+  transition: all 0.5s ease-in;
+}
+
+.nav-container ul li .btn:hover {
+  background: #f7be56;
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+.nav-container ul li .btn span {
+  color: #333;
+  margin-right: 8px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.nav-container ul li .btn i {
+  color: #fff;
+  font-size: 16px;
+}
