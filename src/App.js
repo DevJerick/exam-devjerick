@@ -7,7 +7,7 @@ import About2 from "./components/About2";
 import Dark from "./components/Dark";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
-import Scroll from "./components/Scroll";
+// import Scroll from "./components/Scroll";
 
 function App() {
   return (
@@ -20,7 +20,6 @@ function App() {
       <Dark />
       <Testimonial />
       <Footer />
-      <Scroll />
     </div>
   );
 }

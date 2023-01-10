@@ -134,3 +134,22 @@ footer {
   color: #fff;
   font-size: 16px;
 }
+
+footer .scroll-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  background: #ffac12;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+footer .scroll-top i {
+  font-size: 30px;
+  font-weight: 100px;
+  color: #fff;
+}

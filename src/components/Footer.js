@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/footer.css";
 import Fade from "react-reveal/Fade";
+import Scroll from "./Scroll";
 
 const Footer = () => {
   return (
@@ -98,6 +99,8 @@ const Footer = () => {
           </Fade>
         </div>
       </div>
+
+      <Scroll />
     </footer>
   );
 };
